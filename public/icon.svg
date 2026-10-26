@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </radialGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+  </defs>
+  <!-- Dark modern background -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  <rect width="496" height="496" x="8" y="8" rx="120" fill="none" stroke="#27272a" stroke-width="4" />
+  
+  <!-- Stylized viewfinder grids -->
+  <line x1="80" y1="170" x2="432" y2="170" stroke="#1f2937" stroke-width="2" stroke-dasharray="8 8" />
+  <line x1="80" y1="342" x2="432" y2="342" stroke="#1f2937" stroke-width="2" stroke-dasharray="8 8" />
+  <line x1="170" y1="80" x2="170" y2="432" stroke="#1f2937" stroke-width="2" stroke-dasharray="8 8" />
+  <line x1="342" y1="80" x2="342" y2="432" stroke="#1f2937" stroke-width="2" stroke-dasharray="8 8" />
+  
+  <!-- Cine Outer Lens Ring -->
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#27272a" stroke-width="12" />
+  <circle cx="256" cy="256" r="140" fill="none" stroke="url(#neon)" stroke-width="4" stroke-dasharray="140 100" />
+  
+  <!-- Aperture Blades -->
+  <g stroke="url(#neon)" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M 216 146 L 316 166" />
+    <path d="M 316 166 L 350 250" />
+    <path d="M 350 250 L 296 326" />
+    <path d="M 296 326 L 196 306" />
+    <path d="M 196 306 L 162 222" />
+    <path d="M 162 222 L 216 146" />
+  </g>
+  
+  <!-- Camera glass lens reflex reflection -->
+  <path d="M 190 190 A 90 90 0 0 1 322 190" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.15" stroke-linecap="round" />
+  
+  <!-- Central Aperture Opening -->
+  <polygon points="256,196 308,226 308,286 256,316 204,286 204,226" fill="#09090b" stroke="#3b82f6" stroke-width="1" />
+  <circle cx="256" cy="256" r="12" fill="url(#neon)" />
+  
+  <!-- Outer Focus Marks -->
+  <path d="M 256 50 L 256 70" stroke="#3b82f6" stroke-width="4" />
+  <path d="M 256 442 L 256 462" stroke="#3b82f6" stroke-width="4" />
+  <path d="M 50 256 L 70 256" stroke="#3b82f6" stroke-width="4" />
+  <path d="M 442 256 L 462 256" stroke="#3b82f6" stroke-width="4" />
+</svg>
